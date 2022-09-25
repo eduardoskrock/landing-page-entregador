@@ -10,7 +10,7 @@
 body{
     margin: 0 auto;
     padding: 0;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 h1{
@@ -68,8 +68,7 @@ li > a{
 }
 
 ul > button{
-    background: linear-gradient(to right, rgb(91, 91, 116), rgb(175, 24, 74)
-);
+    background: var(--color-gray);
     width: 12%;
     height: 5vh;
     text-decoration: none;
@@ -82,6 +81,7 @@ ul > button{
     animation: coresDancantes 4s linear infinite;
     color: white;
     cursor: pointer;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -114,12 +114,12 @@ ul > button{
 }
 
 .pre-title__first{
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     padding: 10px;
-    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
     
 }
 .introduction-header__first{
@@ -149,6 +149,7 @@ ul > button{
     border-radius: 8px;
     color: white;
     cursor: pointer;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
 }
 .button-left-side__first a{
     color: white;
@@ -212,9 +213,6 @@ ul > button{
 /*sessão 3*/
 
 
-.third-section{
-    background: var(--color-fundo);
-}
 
 .wrapper-container__third{
     width: 100vw;
@@ -422,6 +420,10 @@ ul > button{
     margin-left: 10px;
 }
 
+.chat-message__1, .chat-message__2, .chat-message__3 {
+    width: 20vw;
+    height: 14vh;
+}
 /*início da quinta sessão*/
 
 .fifty-section{
@@ -524,9 +526,16 @@ ul > button{
     height: 100vh;   
 }
 
+
+
 .text-sixth{
+    margin-top: 30px;
     color: white;
     text-align: center;
+}
+
+.download-app figure img{
+    margin-top: 40px;
 }
 
 .form-sixth{
@@ -585,10 +594,24 @@ ul > button{
 }
 
 #enviar{
+    font-family: 'Inter';
+    font-size: 15px;
     width: 150px;
     height: 30px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+.final-section{
+    height: 50px;
+    background: var(--color-fundo);
+}
+
+.text-footer h1{
+    font-family: 'Inter';
+    font-size: 12px;
+    text-align: center;
 }
 
 
@@ -633,11 +656,12 @@ ul > button{
     }
 
     .second-section{
-        height: 1400px;
+        height: 1200px;
     }
    .container__second{
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 1000px;
    }
 
@@ -648,8 +672,7 @@ ul > button{
    }
    
    .advantage-cads{
-    width: 100vw;
-    margin-top: 20vh;
+    width: 90vw;
     text-align: center;
    }
 
@@ -662,18 +685,18 @@ ul > button{
    .third-section{
     
     width: 100vw;
-    height: 800px;
+    height: 700px;
    }
 
     .container__third{
         flex-direction: column;
     }
     .wrapper-container__third h1{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .wrapper-container__third p{
-        width: 80vw;
+       
         font-size: 10px;
     }
    .chat-illustration{
@@ -684,12 +707,21 @@ ul > button{
     width: 90vw;
    }
 
-   .wrapper-chat-illustration{
-    width: 100vw;
-    height: 50vh;
+   .title__third h1{
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.2em;
+    margin-right: 15px;
    }
+
+   .wrapper-chat-illustration{
+    margin-top: 20px;
+    width: 100vw;
+    justify-content: center;
+   }
+
    .square{
-    width: 350px;
+    width: 360px;
     height: 350px;
     margin-top: 20px;
     margin-right: 20px;
@@ -719,21 +751,20 @@ ul > button{
     width: 60vw;
 }
    .chat-message__1{
-    width: 250px;
+    width: 260px;
     height: 65px;
     margin-top: 30px;
    }
 
    
    .chat-message__2{
-    width: 250px;
+    width: 260px;
     height: 65px;
     margin-top: 30px;
-    margin-left: 210px;
    }    
 
    .chat-message__3{
-    width: 250px;
+    width: 260px;
     height: 65px;
     margin-top: 30px;
    }
@@ -746,17 +777,23 @@ ul > button{
 
    .fourth-section{
     width: 100vw;
-    height: 700px; 
+    height: 430px; 
+   }
+
+   .fourth-section h1{
+    font-size: 25px;
    }
 
    .container__fourth {
+    background: white;
     display: flex;
+    height: 800px;
     flex-direction: column;
    }
 
    .title-principal__fourth {
     width: 100vw;
-    height: 100px;
+    height: 25vh;
     line-height: 35px;
     margin-top: 10px;
     text-align: center;
@@ -769,8 +806,11 @@ ul > button{
 
 
     .container-cards{
-        width: 100vw;
+        width: 100vw;  
+        height: 500px; 
+        background:#e7066446;
     }
+
    .wrapper-cards{
     width: 100vw;
     display: flex;
@@ -778,7 +818,7 @@ ul > button{
 
    .cards{
     border-radius: 20px;
-    width: 180px;
+    width: 170px;
     height: 180px;
     text-align: center;
    }
@@ -842,6 +882,8 @@ ul > button{
    }
    .text-fifty-section{
     width: 80vw;
+    font-size: 30px;
+    text-align: center;
    }
 
    .text-fifty-section h1{
@@ -854,8 +896,10 @@ ul > button{
    }
 
    .text-fifty-section p{
+    
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    line-height: 1.7em;
    
    }
 
@@ -865,22 +909,69 @@ ul > button{
    }
 
 
-
    .wraper-sixth{
     width: 100vw;
+    height: 30vh;
    }
 
    .text-sixth h1{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
    }
 
     .text-sixth span{
-        color: var(--color-gray);
+        color: var(--color-blue);
     }
 
     .download-app figure img{
         width: 350px;
         height: 50px;
+    }
+
+
+    .sixth-section{
+        width: 100vw;
+        height: 900px;
+    }
+
+    .container-sixth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+
+    .wraper-sixth{
+        display: block;
+        height: 40vh;
+    }
+
+    .form-sixth{
+        display: block;
+        width: 80vw;
+        
+    }
+
+    .wraper-form-sixth {
+        display: block;
+        width: 35vw;
+        height: 60vh;
+    }
+    .cards-form{
+        display: block;
+        width: 80vw;
+        height: 500px;
+    }  
+
+    .final-section{
+        height: 50px;
+    }
+
+    .text-footer h1{
+        font-family: 'Inter';
+        font-size: 10px;
+        text-align: center;
     }
 }
