@@ -562,7 +562,7 @@ ul > button{
 }
 
 .text-title-cards p{
-    color: #0BE24F;
+    color: #c0bfbf;
     font-weight: 800;
     font-size: 25px;
 }
@@ -960,7 +960,7 @@ ul > button{
     }
     .cards-form{
         display: block;
-        width: 80vw;
+        width: 85vw;
         height: 500px;
     }  
 
